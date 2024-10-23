@@ -31,3 +31,4 @@ all_scores_col = np.hstack((b1_scores_col, b2_scores_col, b3_scores_col, b4_scor
 a_input_data = np.array([b1_scores.sum(),b2_scores.sum(),b3_scores.sum(),b4_scores.sum(),b5_scores.sum(),b6_scores.sum()])
 final_score = ahp.ahp(all_scores_col,judgment_matrix.a_judgment_matrix,WeightsType.EIGEN)
 print(final_score)
+print(np.argmax(final_score))

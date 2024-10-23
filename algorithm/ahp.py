@@ -88,6 +88,7 @@ def judge_to_weights(judgment,weight_type):
 
 
 def ahp(ahp_input, judgment_matrix, weight_type):
+    input_normalization = normalization(ahp_input,0)
     #判断矩阵归一化
     judgment_normalization = normalization(judgment_matrix, axis = 0)
     #获得权重矩阵
