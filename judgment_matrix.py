@@ -1,10 +1,43 @@
 import numpy as np
 from algorithm import ahp
-b1_judgment_matrix = ahp.generate_consistent_matrix(3)
-b2_judgment_matrix = ahp.generate_consistent_matrix(5)
-b3_judgment_matrix = ahp.generate_consistent_matrix(3)
-b4_judgment_matrix = ahp.generate_consistent_matrix(2)
-b5_judgment_matrix = ahp.generate_consistent_matrix(3)
-b6_judgment_matrix = ahp.generate_consistent_matrix(4)
+b1_judgment_matrix = np.array([
+    [1, 0.666667, 0.5],
+    [1.5, 1, 0.75],
+    [2, 1.33333, 1]
+])
+b2_judgment_matrix = np.array([
+    [1, 2, 0.666667, 0.4, 0.5],
+    [0.5, 1, 0.333333, 0.2, 0.25],
+    [1.5, 3, 1, 0.6, 0.75],
+    [2.5, 5, 1.66667, 1, 1.25],
+    [2, 4, 1.33333, 0.8, 1]
+])
+b3_judgment_matrix = np.array([
+    [1, 0.333333, 0.5],
+    [3, 1, 1.5],
+    [2, 0.666667, 1]
+])
+b4_judgment_matrix = np.array([
+    [1, 0.666667],
+    [1.5, 1]
+])
+b5_judgment_matrix = np.array([
+    [1, 0.6, 0.75],
+    [1.66667, 1, 1.25],
+    [1.33333, 0.8, 1]
+])
+b6_judgment_matrix = np.array([
+    [1, 2, 0.4, 0.666667],
+    [0.5, 1, 0.2, 0.333333],
+    [2.5, 5, 1, 1.66667],
+    [1.5, 3, 0.6, 1]
+])
 
-a_judgment_matrix = ahp.generate_consistent_matrix(6)
+a_judgment_matrix = np.array([
+    [1, 2, 0.4, 0.666667, 0.5, 0.333333],
+    [0.5, 1, 0.2, 0.333333, 0.25, 0.166667],
+    [2.5, 5, 1, 1.66667, 1.25, 0.833333],
+    [1.5, 3, 0.6, 1, 0.75, 0.5],
+    [2, 4, 0.8, 1.33333, 1, 0.666667],
+    [3, 6, 1.2, 2, 1.5, 1]
+])
